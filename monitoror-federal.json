@@ -1,16 +1,135 @@
 {
   "version": "2.0",
-  "columns": 2,
+  "zoom": 0.5,
+  "columns": 4,
   "tiles": [
     {
-      "type": "PING",
-      "label": "Localhost",
-      "params": { "hostname": "127.0.0.1" }
+      "type": "HTTP-RAW",
+      "label": "Baden-Würrtemberg",
+      "params": {
+       "url": "https://www.baden-wuerttemberg.de/.well-known/security.txt",
+       "regex": "Contact:\\s*([^\\s]*)"
+       }
     },
     {
-      "type": "PORT",
-      "label": "Dev server",
-      "params": { "hostname": "127.0.0.1", "port": 8080 }
+      "type": "HTTP-RAW",
+      "label": "Bayern",
+      "params": {
+       "url": "https://www.bayern.de/.well-known/security.txt",
+       "regex": "Contact:\\s*([^\\s]*)"
+       }
+    },
+    {
+      "type": "HTTP-RAW",
+      "label": "Berlin",
+      "params": {
+       "url": "https://www.berlin.de/.well-known/security.txt", 
+       "regex": "Contact:\\s*([^\\s]*)"
+       }
+    },
+    {
+      "type": "HTTP-RAW",
+      "label": "Brandenburg",
+      "params": {
+       "url": "https://www.brandenburg.de/.well-known/security.txt",
+       "regex": "Contact:\\s*([^\\s]*)"
+       }
+    },
+    {
+      "type": "HTTP-RAW",
+      "label": "Bremen",
+      "params": {
+       "url": "https://www.bremen.de/.well-known/security.txt",
+       "regex": "Contact:\\s*([^\\s]*)"
+       }
+    },
+    {
+      "type": "HTTP-RAW",
+      "label": "Hamburg",
+      "params": {
+       "url": "https://www.hamburg.de/.well-known/security.txt",
+       "regex": "Contact:\\s*([^\\s]*)"
+       }
+    },
+    {
+      "type": "HTTP-RAW",
+      "label": "Hessen",
+      "params": {
+       "url": "https://www.hessen.de/.well-known/security.txt", 
+       "regex": "Contact:\\s*([^\\s]*)"
+       }
+    },
+    {
+      "type": "HTTP-RAW",
+      "label": "Mecklenburg-Vorpommern",
+      "params": {
+       "url": "https://www.mecklenburg-vorpommern.de/.well-known/security.txt",
+       "regex": "Contact:\\s*([^\\s]*)"
+       }
+    },
+    {
+      "type": "HTTP-RAW",
+      "label": "Niedersachsen",
+      "params": {
+       "url": "https://www.niedersachsen.de/.well-known/security.txt",
+       "regex": "Contact:\\s*([^\\s]*)"
+       }
+    },
+    {
+      "type": "HTTP-RAW",
+      "label": "Nordrhein-Westfalen",
+      "params": {
+       "url": "https://www.land.nrw/.well-known/security.txt",
+       "regex": "Contact:\\s*([^\\s]*)"
+       }
+    },
+    {
+      "type": "HTTP-RAW",
+      "label": "Rheinland-Pfalz",
+      "params": {
+       "url": "https://www.rlp.de/.well-known/security.txt",
+       "regex": "Contact:\\s*([^\\s]*)"
+       }
+    },
+    {
+      "type": "HTTP-RAW",
+      "label": "Saarland",
+      "params": {
+       "url": "https://www.saarland.de/.well-known/security.txt",
+       "regex": "Contact:\\s*([^\\s]*)"
+       }
+    },
+    {
+      "type": "HTTP-RAW",
+      "label": "Sachsen",
+      "params": {
+       "url": "https://www.sachsen.de/.well-known/security.txt",
+       "regex": "Contact:\\s*([^\\s]*)"
+       }
+    },
+    {
+      "type": "HTTP-RAW",
+      "label": "Sachsen-Anhalt",
+      "params": {
+       "url": "https://www.sachsen-anhalt.de/.well-known/security.txt",
+       "regex": "Contact:\\s*([^\\s]*)"
+       }
+    },
+    {
+      "type": "HTTP-RAW",
+      "label": "Schleswig-Holstein",
+      "params": {
+       "url": "https://www.schleswig-holstein.de/.well-known/security.txt",
+       "regex": "Contact:\\s*([^\\s]*)"
+       }
+    },
+    {
+      "type": "HTTP-RAW",
+      "label": "Thüringen",
+      "params": {
+       "url": "https://thueringen.de/.well-known/security.txt",
+       "regex": "Contact:\\s*([^\\s]*)"
+       }
     }
   ]
 }
